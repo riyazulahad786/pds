@@ -1,13 +1,13 @@
 export const PatientData = [
   {
     id: 1,
-    name: "Riyaz",
+    name: "Feroz",
     contact: "123-456-7890",
-    parent: "Feroz",
+    parent: " Riyaz",
     actions: [
       "Vaccines over due 1",
-      "Follow-up pending",
-      "Lab Tests in-progress",
+      "Follow-up ",
+      
     ],
     dueDate: "2024-12-30",
   },
