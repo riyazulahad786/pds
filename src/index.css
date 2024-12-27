@@ -78,8 +78,11 @@
     padding: 8px;
     box-sizing: border-box;
   }
-  @media screen and (max-width:676px) {
+  /* @media screen and (max-width:676px) {
     body{
       font-size: 10px !important;
     }
+  } */
+  .table td{
+    border: none !important;
   }

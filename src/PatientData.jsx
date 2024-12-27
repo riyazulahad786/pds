@@ -7,9 +7,6 @@ export const PatientData = [
     actions: [
       "Vaccines over due 1",
       "Follow-up ",
-      
-      "Follow-up ",
-      "Lab Tests",
     ],
     dueDate: "2024-12-30",
   },
