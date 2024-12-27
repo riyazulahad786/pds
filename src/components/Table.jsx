@@ -55,9 +55,9 @@ const Table = ({ data, setData }) => {
         </div>
       )}
       {!loading && (
-        <div className="table-responsive">
+        <div className="table-responsive ">
           <table className="table table-bordered table-hover">
-            <thead className="table-dark">
+            <thead className="table-dark mobile_text_size">
               <tr>
                 <th>Patient Name</th>
                 <th>Contact</th>
@@ -82,21 +82,21 @@ const Table = ({ data, setData }) => {
                   <td>{patient.parent}</td>
                   <td>{patient.actions.join(', ')}</td>
                   <td>{patient.dueDate}</td>
-                  <td className="d-flex">
+                  <td className="d-flex gap-2 mobile_text_size">
                     <button
-                      className="btn btn-warning mx-1"
+                      className="btn mobile_text_size btn-warning "
                       onClick={() => handleActionClick('Vaccines', patient)}
                     >
                       Vaccines
                     </button>
                     <button
-                      className="btn btn-primary mx-1"
+                      className="btn mobile_text_size btn-primary "
                       onClick={() => handleActionClick('Follow-up', patient)}
                     >
                       Follow-up
                     </button>
                     <button
-                      className="btn btn-info"
+                      className="btn mobile_text_size btn-info"
                       onClick={() => handleActionClick('Lab Tests', patient)}
                     >
                       Lab Tests
