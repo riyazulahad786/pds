@@ -40,7 +40,8 @@ export const PatientData = [
     name: "James Miller",
     contact: "654-321-0987",
     parent: "Emma Miller",
-    actions: ["Lab Tests Pending", "Follow-up"],
+    actions: ["Lab Tests Pending",
+       "Follow-up"],
     dueDate: "2024-12-22",
   },
   {

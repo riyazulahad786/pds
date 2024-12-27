@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IoCloseSharp } from "react-icons/io5";
 
-const Modal = ({ patient, action, onClose, onUpdate }) => {
+const Modal = ({ patient, action, onClose, onUpdate,handleActionClick }) => {
   const [updatedPatient, setUpdatedPatient] = useState(patient);
 
   const handleInputChange = (e) => {
@@ -85,6 +85,12 @@ const Modal = ({ patient, action, onClose, onUpdate }) => {
           <div>
             <h2>{action} Details</h2>
             <p>Details for action: {action} on patient {patient.name}.</p>
+            <button
+                      className="btn btn-success"
+                      onClick={() => handleActionClick('Update', patient)}
+                    >
+                      Update
+                    </button>
           </div>
         ) : (
           <div>
